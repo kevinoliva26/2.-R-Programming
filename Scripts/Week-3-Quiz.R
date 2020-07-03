@@ -27,6 +27,7 @@ with(mtcars, tapply(mpg,cyl,mean))
 hp_per_cyl <- tapply(mtcars$hp, mtcars$cyl,mean)
 hp4cyl <- hp_per_cyl["4"]
 hp8cyl <- hp_per_cyl["8"]
-hp4cyl - hp8cyl
+answer <- hp4cyl 
+answer
 
 
