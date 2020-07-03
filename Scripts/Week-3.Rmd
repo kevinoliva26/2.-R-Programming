@@ -34,8 +34,12 @@ Always return a list length 1
 x <- list(a=1:4,b=rnorm(10),c=rnorm(20,1),d=rnorm(100,5))
 sapply(x,mean)
 ```
+if the result is a list where every element is of length one, then sapply() returns a vector. If the result is a list where every element is a vector of the same length (> 1), sapply() returns a matrix. If sapply() can't figure things out, then it just returns a list, no different from what lapply() would give you.
+
+
 
 ###apply()
+Aplica una funcion ya sea a las columnas filas o columnas seleccionadas. 
 is used with arrays
 is often used to apply a function to the rows or columns of a matrix
 argument MAGIN is an integer vector indicating which margins should be retained
@@ -58,6 +62,13 @@ x <- matrix(rnorm(200),20, 10)
 apply(x, 1, quantile, probs = c(0.25,0.75))
 ```
 
+###vapply
+Similar to sapply but requires you to specify the format of the output in advance, instead of just allowing R to 'guess' what you wanted.
+```{r}
+vapply(flags, class, character(1))
+```
+
+
 ###mapply
 Applies a function over multiple lists arguments
 function (FUN,...,MoreArgs=NULL,SIMPLIFY=TRUE)
@@ -73,12 +84,21 @@ mapply(rep,1:4,4:1)
 
 ###tapply()
 is used to apply a funciont over subsets of a vector.
+Acepta subsets como argumentos
+Se parece a la funcion de group by de SQL
 function(x, INDEX, FUN = NULL,..., simplify = TRUE)
 x: vector
 INDEX: a factor or a list of vector
 FUN: function to be applied
 ... contains other arguments to be passed to FUN
 simplify, should we simplefy the result?
+
+```{r}
+library(datasets)
+data(iris)
+tapply(iris$Sepal.Length, iris$Species, mean)
+```
+
 
 ```{r}
 x<- c(rnorm(10),runif(10),rnorm(10,1))

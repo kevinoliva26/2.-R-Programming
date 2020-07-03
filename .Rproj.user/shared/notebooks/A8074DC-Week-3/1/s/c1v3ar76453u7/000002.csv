@@ -1,5 +1,4 @@
-"0","mapply(rep,1:4,4:1)
-"
+"0","mapply(rep,1:4,4:1)"
 "1","[[1]]
 "
 "1","[1]"
@@ -37,4 +36,12 @@
 "1","
 "
 "1","
+"
+"2","
+| Keep trying! Or, type info() for more options.
+"
+"2","
+| Use table(flags$landmass) to see how many flags/countries fall into
+| each group.
+
 "
