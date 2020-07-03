@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593721705042.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6CBAE5EC",
+    "lastKnownWriteTime" : 1593736413,
+    "last_content_update" : 1593736413853,
+    "path" : "~/Coursera/2. R Programming/2. R Programming/Scripts/Week-3.Rmd",
+    "project_path" : "Scripts/Week-3.Rmd",
+    "properties" : {
+        "cursorPosition" : "148,95",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

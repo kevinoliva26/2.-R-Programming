@@ -1,0 +1,8 @@
+"0","datestring <- c(""January 10, 2012 10:40"",""December 9, 2011 9:10"")"
+"0","x <- strptime(datestring,""%B %d, %Y %H:%M"") # para cambiar a formato deseado"
+"0","x"
+"1","[1]"
+"1"," ""2012-01-10 10:40:00 -05"""
+"1"," ""2011-12-09 09:10:00 -05"""
+"1","
+"

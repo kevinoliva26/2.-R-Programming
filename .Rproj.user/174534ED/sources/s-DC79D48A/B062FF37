@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593703822881.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B062FF37",
+    "lastKnownWriteTime" : 1593721351,
+    "last_content_update" : 1593721351634,
+    "path" : "~/Coursera/2. R Programming/2. R Programming/Scripts/Week-2-Review.R",
+    "project_path" : "Scripts/Week-2-Review.R",
+    "properties" : {
+        "cursorPosition" : "100,13",
+        "scrollLine" : "75",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
