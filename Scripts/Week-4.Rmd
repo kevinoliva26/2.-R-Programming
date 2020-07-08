@@ -1,0 +1,93 @@
+---
+title: "Week-4"
+author: "kevinoliva26"
+date: "7/7/2020"
+output: html_document
+---
+
+###str function
+
+Da los argumentos si se pone en una funcion, o da informacion de algun data type
+
+```{r}
+str(airquality)
+```
+
+###generating random numbers
+
+rnorm(x): generates random variables with a given mean an sd
+dnorm(q): evaluate the normal probability densitry at a point
+pnorm(p): evaluate the cumulative distribution for a normal distribution
+qnorm(p): inversa de pnorm 
+rpois(n): generates random Poisson variables with a given rate
+ppois: distrinusion acumulada de Poisson
+
+These functions have usually 4 functions associated with them:
+
+d density
+r random number generation
+p cumulative distribution
+q quantile function
+
+```{r}
+#Para volver a generar los mismos numeros aleatorios. set.seed(1) indica que voy a volver a generar los mismos numeros aleatorios que la primera vez que lo genere. 
+set.seed(1)
+rnorm(5)
+```
+
+###simulating a linear model
+
+```{r}
+set.seed(20)
+x <- rnorm(100)
+e <- rnorm(100,0,2)
+y <- 0.5 + 2 * x + e
+summary(y)
+plot(x,y)
+```
+
+Que pasa si x es binario
+
+```{r}
+set.seed(10)
+x <- rbinom(100, 1, 0.5)
+e <- rnorm(100,0,2)
+y <- 0.5 + 2 * x + e
+summary(y)
+plot(x,y)
+```
+
+###random sampling
+
+The sample funcionts draw randomly from a specified vector of objects allowing you to sample from arbitrary distributions
+
+```{r}
+set.seed(1)
+sample(1:10,4)
+sample(letters,5)
+sample(1:10, replace = TRUE)
+```
+
+##R Profiler
+
+Es una herramienta de optimizacion de codigo, como por ejemplo cuando una porcion del codigo tiene tiene que repetirse miles de veces y eso hace que tarde en correr. 
+
+system.time() sirve para saber cuanto tarda en correr una expresion. regresa un objeto de classe proc_time
+
+```{r}
+system.time(readLines("http://www.jhsph.edu"))
+```
+
+
+Rprof() funcion para iniciar el R Profiler
+summaryRprof() resume el output de Rprof para que sea mas readable
+
+Keeps track of the function call stack at reagularly sampled intervals and tabulates how much time is spend in each function.
+
+
+
+
+
+
+
+
