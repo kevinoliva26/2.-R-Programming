@@ -14,6 +14,7 @@ str(airquality)
 ```
 
 ###generating random numbers
+Each probability distribution in R has an r*** function (for "random"), a d*** function (for "density"), a p*** (for "probability"), and q*** (for "quantile"). 
 
 rnorm(x): generates random variables with a given mean an sd
 dnorm(q): evaluate the normal probability densitry at a point
@@ -21,6 +22,8 @@ pnorm(p): evaluate the cumulative distribution for a normal distribution
 qnorm(p): inversa de pnorm 
 rpois(n): generates random Poisson variables with a given rate
 ppois: distrinusion acumulada de Poisson
+
+
 
 These functions have usually 4 functions associated with them:
 
